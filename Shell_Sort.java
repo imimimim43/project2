@@ -24,19 +24,15 @@ public class Shell_Sort {
 				arr[i] = (i+1); 
 		}*/
 		//값이 역순일 때
-		for(int i = 0; i < arr.length; i++) {
+	/*	for(int i = 0; i < arr.length; i++) {
 			arr[i] = (arr.length-i*1); 
-	}
+	}*/
 		//값이 랜덤일 때
 		for(int i = 0; i < arr.length; i++) {
 				arr[i] = (i+1); 
 				}
 	        arr = shuffle(arr);
-
-	        for (int i = 0; i < arr.length; i++) {
-	            System.out.print(arr[i] + " ");
-	        }
-		
+			
 		int interval = arr.length/2;// 간격은 배열의 크기 /2
 		
 		while (interval >= 1) { // 간격이 0이 될 때까지 실행.
