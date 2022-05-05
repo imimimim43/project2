@@ -48,6 +48,12 @@ for(int i = 0; i < arr.length; i++) {
 
 <br>
 
+![image](https://user-images.githubusercontent.com/102197100/166949468-f1e3dadf-eaee-407d-893b-422c829f14bf.png)
+
+<br>
+
+<br>
+
 - **삽입 정렬을 개선한 정렬 알고리즘**으로, 쉘 정렬은 일정한 gap을 기준으로 띄엄띄엄 정렬하게 된다. gap은 배열의 size를 0이 될때까지 2로 나누는 방식으로 지정했다. 
 
 <br>
@@ -90,6 +96,12 @@ int interval = arr.length/2;// 간격은 배열의 크기 /2
 
 ## 퀵 정렬(Quick_Sort)
 ■ 퀵 정렬(Quick_Sort)
+
+<br>
+
+![image](https://user-images.githubusercontent.com/102197100/166949327-7f279124-a12e-467a-9da9-bc86e19ec1a8.png)
+
+<br>
 
 <br>
 
@@ -138,6 +150,12 @@ int interval = arr.length/2;// 간격은 배열의 크기 /2
 
 <br>
 
+![image](https://user-images.githubusercontent.com/102197100/166949202-94ff3df5-02fe-42b8-b6ba-652d29da69dc.png)
+
+<br>
+
+<br>
+
 - 힙 트리 구조를 이용한 정렬 방법이며 내림차순 정렬에는 최대 힙을 구성하고 , 오름차순 정렬에는 최소 힙을 구성하면 된다. 자바에는 quere가 이미 구현되어 있기 때문에 그것을 이용하면 쉽게 구현할 수 있다.
 
 <br>
@@ -169,6 +187,12 @@ Queue H = new PriorityQueue();
 
 ## 삽입 정렬(Insertion_Sort)
 ■ 섭입 정렬(Insertion_Sort)
+
+<br>
+
+![image](https://user-images.githubusercontent.com/102197100/166949067-aecf70cb-6c97-464d-8c5f-8c781c174a67.png)
+
+<br>
 
 <br>
 
@@ -204,6 +228,12 @@ Queue H = new PriorityQueue();
 
 ## 버블 정렬(Bubble_Sort)
 ■ 버블 정렬(Bubble_Sort)
+
+<br>
+
+![image](https://user-images.githubusercontent.com/102197100/166948923-0a47ffc9-5541-4778-a244-3da20d6b2254.png)
+
+<br>
 
 <br>
 
