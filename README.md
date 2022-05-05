@@ -198,18 +198,6 @@ Queue H = new PriorityQueue();
 	    }
 ```
 
-<br>
-   for(int i=0; i<arr.length; i++) {
-	    	int tmp = arr[i];
-	    	int prev = i - 1;
-	    	
-	    	while(prev >= 0 && arr[prev] > tmp) {
-	    		arr[prev + 1] = arr[prev];
-	    		prev--;
-	    	}
-	    	arr[prev + 1] = tmp;
-	    }
- ```
 
 <br>
 
@@ -221,8 +209,8 @@ Queue H = new PriorityQueue();
 
 <br>
 
-## 선택 정렬(Insertion_Sort)
-■ 선택 정렬(Insertion_Sort)
+## 버블 정렬(Bubble_Sort)
+■ 버블 정렬(Bubble_Sort)
 
 <br>
 
@@ -246,23 +234,12 @@ Queue H = new PriorityQueue();
 	    }
 ```
 
-<br>
-   for(int i=0; i<arr.length; i++) {
-	    	int tmp = arr[i];
-	    	int prev = i - 1;
-	    	
-	    	while(prev >= 0 && arr[prev] > tmp) {
-	    		arr[prev + 1] = arr[prev];
-	    		prev--;
-	    	}
-	    	arr[prev + 1] = tmp;
-	    }
- ```
+
 
 <br>
 
-![image](https://user-images.githubusercontent.com/102197100/166897649-cdc9a663-95a0-4cc5-bc65-cb6c33fb28f6.png)
+![image](https://user-images.githubusercontent.com/102197100/166898149-007becf0-ada9-4577-90ff-ee1deb9514ac.png)
 
 <br>
 
-- **선택 정렬**로 정렬, 역순, 랜덤 배열 값을 정렬한 결과, 위 그래프가 그려졌는데 앞서 설명했던 정렬들과 같이 입력 값이 2^12으로 갈수록 역순, 랜덤, 정렬 순으로 정렬 시간이 점점 길어지는 것을 알 수 있다. 그러나 다른 정렬들보다 역순 배열 값을 정렬하는 시간이 조금 더 긴 것을 알 수 있다.
+- **버블 졍렬**로 정렬, 역순, 랜덤 배열 값을 정렬한 결과, 위 그래프가 그려졌는데 입력 값이 2^12으로 갈수록 랜덤, 정렬, 역순 순으로 정렬 시간이 점점 짧아지는 것을 알 수 있다. 다른 정렬들과 달리 입력 값이 많아질수록 정렬 시간이 짧아진다는 것을 알 수 있다.
