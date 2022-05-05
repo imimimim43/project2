@@ -79,7 +79,7 @@ int interval = arr.length/2;// 간격은 배열의 크기 /2
 
 <br>
 
-![image](https://user-images.githubusercontent.com/102197100/166885473-207a92c7-0ef2-4dd3-aedb-68aa970263fe.png)
+![image](https://user-images.githubusercontent.com/102197100/166903427-4bd1c801-258d-4326-ad6d-19e5147d39a0.png)
 
 
 <br>
@@ -125,7 +125,7 @@ int interval = arr.length/2;// 간격은 배열의 크기 /2
 
 <br>
 
-![image](https://user-images.githubusercontent.com/102197100/166890318-efd0f16f-37d4-4d6a-adb9-8833662febce.png)
+![image](https://user-images.githubusercontent.com/102197100/166902442-033dce8b-745b-4bf8-b4d4-d542ab6b3f60.png)
 
 <br>
 
