@@ -207,6 +207,12 @@ Queue H = new PriorityQueue();
 
 <br>
 
+![image](https://user-images.githubusercontent.com/102197100/166948634-f38b4d97-d595-4769-bc65-5e74f3a9a651.png)
+
+<br>
+
+<br>
+
 - 서로 이웃한 데이터들을 비교하며 가장 큰 데이터를 가장 뒤로 보내며 정렬하는 방식이다.
 
 <br>
