@@ -215,16 +215,15 @@ Queue H = new PriorityQueue();
 ### 코드 구현
 
 ```
-   for(int i=0; i<arr.length; i++) {
-	    	int tmp = arr[i]; //tmp에 우선 배열 값 넣어두기
-	    	int prev = i - 1; //tmpm의 왼쪽 배열 값
-	    	
-	    	while(prev >= 0 && arr[prev] > tmp) { // 왼쪽 배열 값의 크기가 크다면
-	    		arr[prev + 1] = arr[prev]; //오른쪽으로 옮기기
-	    		prev--;
-	    	}
-	    	arr[prev + 1] = tmp;
-	    }
+for(int i = 0; i <arr.length;i++) {
+				for(int j = 0; j < arr.length - 1 -i; j++) {
+					if(arr[j] > arr[j+1]) {
+						int tmp = arr[j];
+						arr[j] = arr[j+1];
+						arr[j+1] = tmp;
+					}
+				}
+			}	
 ```
 
 
