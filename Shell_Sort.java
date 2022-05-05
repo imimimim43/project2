@@ -7,9 +7,13 @@ public class Shell_Sort {
 		long start = System.nanoTime();
 		int size = (int) Math.pow(2, N);
 		int[] arr = new int[size];
-		
-		for(int i = 0; i < arr.length; i++) {
+		//값이 정렬됐을 때
+		/*for(int i = 0; i < arr.length; i++) {
 				arr[i] = (i+1); 
+		}*/
+		//값이 역순일 때
+		for(int i = arr.length; i > 0; i--) {
+				arr[i] = i+1; 
 		}
 		
 		int interval = arr.length/2;// 간격은 배열의 크기 /2
