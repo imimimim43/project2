@@ -170,3 +170,99 @@ Queue H = new PriorityQueue();
 
 - **힙 정렬**로 정렬, 역순, 랜덤 배열 값을 정렬한 결과, 위 그래프가 그려졌는데 쉘 정렬, 퀵 정렬과 같이 입력 값이 2^12으로 갈수록 역순, 랜덤, 정렬 순으로 정렬 시간이 점점 길어지는 것을 알 수 있다. 퀵 정렬과 힙 정렬의 그래프는 거의 유사하게 생긴 것을 알 수 있다.
 
+
+<br>
+
+## 선택 정렬(Insertion_Sort)
+■ 선택 정렬(Insertion_Sort)
+
+<br>
+
+- 정렬되지 않은 값들 중 가장 작은 데이터, 최솟값을 찾아 제일 왼쪽의 값과 swap하는 정렬이다.
+
+<br>
+
+
+### 코드 구현
+
+```
+   for(int i=0; i<arr.length; i++) {
+	    	int tmp = arr[i]; //tmp에 우선 배열 값 넣어두기
+	    	int prev = i - 1; //tmpm의 왼쪽 배열 값
+	    	
+	    	while(prev >= 0 && arr[prev] > tmp) { // 왼쪽 배열 값의 크기가 크다면
+	    		arr[prev + 1] = arr[prev]; //오른쪽으로 옮기기
+	    		prev--;
+	    	}
+	    	arr[prev + 1] = tmp;
+	    }
+```
+
+<br>
+   for(int i=0; i<arr.length; i++) {
+	    	int tmp = arr[i];
+	    	int prev = i - 1;
+	    	
+	    	while(prev >= 0 && arr[prev] > tmp) {
+	    		arr[prev + 1] = arr[prev];
+	    		prev--;
+	    	}
+	    	arr[prev + 1] = tmp;
+	    }
+ ```
+
+<br>
+
+![image](https://user-images.githubusercontent.com/102197100/166895123-6323ad75-e287-4a66-8832-f06083cd65c8.png)
+
+<br>
+
+- **선택 정렬**로 정렬, 역순, 랜덤 배열 값을 정렬한 결과, 위 그래프가 그려졌는데 앞서 설명했던 정렬들과 같이 입력 값이 2^12으로 갈수록 역순, 랜덤, 정렬 순으로 정렬 시간이 점점 길어지는 것을 알 수 있다. 그러나 다른 정렬들보다 역순 배열 값을 정렬하는 시간이 조금 더 긴 것을 알 수 있다.
+
+<br>
+
+## 선택 정렬(Insertion_Sort)
+■ 선택 정렬(Insertion_Sort)
+
+<br>
+
+- 정렬되지 않은 값들 중 가장 작은 데이터, 최솟값을 찾아 제일 왼쪽의 값과 swap하는 정렬이다.
+
+<br>
+
+
+### 코드 구현
+
+```
+   for(int i=0; i<arr.length; i++) {
+	    	int tmp = arr[i]; //tmp에 우선 배열 값 넣어두기
+	    	int prev = i - 1; //tmpm의 왼쪽 배열 값
+	    	
+	    	while(prev >= 0 && arr[prev] > tmp) { // 왼쪽 배열 값의 크기가 크다면
+	    		arr[prev + 1] = arr[prev]; //오른쪽으로 옮기기
+	    		prev--;
+	    	}
+	    	arr[prev + 1] = tmp;
+	    }
+```
+
+<br>
+   for(int i=0; i<arr.length; i++) {
+	    	int tmp = arr[i];
+	    	int prev = i - 1;
+	    	
+	    	while(prev >= 0 && arr[prev] > tmp) {
+	    		arr[prev + 1] = arr[prev];
+	    		prev--;
+	    	}
+	    	arr[prev + 1] = tmp;
+	    }
+ ```
+
+<br>
+
+![image](https://user-images.githubusercontent.com/102197100/166895123-6323ad75-e287-4a66-8832-f06083cd65c8.png)
+
+<br>
+
+- **선택 정렬**로 정렬, 역순, 랜덤 배열 값을 정렬한 결과, 위 그래프가 그려졌는데 앞서 설명했던 정렬들과 같이 입력 값이 2^12으로 갈수록 역순, 랜덤, 정렬 순으로 정렬 시간이 점점 길어지는 것을 알 수 있다. 그러나 다른 정렬들보다 역순 배열 값을 정렬하는 시간이 조금 더 긴 것을 알 수 있다.
