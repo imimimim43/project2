@@ -91,3 +91,50 @@ int interval = arr.length/2;// 간격은 배열의 크기 /2
 
 - **쉘 정렬**로 정렬, 역순, 랜덤 배열 값을 정렬한 결과, 위 그래프가 그려졌는데 입력 값이 2^12으로 갈수록 역순, 랜덤, 정렬 순으로 정렬 시간이 점점 길어지는 것을 알 수 있다.
 
+<br>
+
+## 퀵 정렬(Quick_Sort)
+■ 퀵 정렬(Quick_Sort)
+
+<br>
+
+- 분할, 정복을 이용해서 정렬을 수행하며 pivot를 정하여 왼쪽으로는 pivot보다 낮은 값을 정렬하고 오른쪽으로는 pivot보다 높은 값으로 정렬한다. pivot은 배열 가운데 요소를 선택하면 되고 pivot를 기준으로 왼쪽, 오른쪽을 재귀호출 시켜주면 된다.
+
+<br>
+
+
+### 코드 구현
+
+```
+ public void sort(int[] arr, int l, int r){
+        int left = l;
+        int right = r;
+        int pivot = arr[(l+r)/2];
+        
+        do{
+            while(arr[left] < pivot) left++;
+            while(arr[right] > pivot) right--;
+            if(left <= right){    
+                int temp = arr[left];
+                arr[left] = arr[right];
+                arr[right] = temp;
+                left++;
+                right--;
+            }
+        }while (left <= right);
+        
+        if(l < right) sort(arr, l, right);
+        if(r > left) sort(arr, left, r);
+    }
+```
+
+<br>
+
+![image](https://user-images.githubusercontent.com/102197100/166890318-efd0f16f-37d4-4d6a-adb9-8833662febce.png)
+
+<br>
+
+- **쉘 정렬**로 정렬, 역순, 랜덤 배열 값을 정렬한 결과, 위 그래프가 그려졌는데 입력 값이 2^12으로 갈수록 역순, 랜덤, 정렬 순으로 정렬 시간이 점점 길어지는 것을 알 수 있다.
+
+
+
