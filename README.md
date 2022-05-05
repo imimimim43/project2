@@ -261,7 +261,7 @@ Queue H = new PriorityQueue();
 
 <br>
 
-![image](https://user-images.githubusercontent.com/102197100/166895123-6323ad75-e287-4a66-8832-f06083cd65c8.png)
+![image](https://user-images.githubusercontent.com/102197100/166897649-cdc9a663-95a0-4cc5-bc65-cb6c33fb28f6.png)
 
 <br>
 
