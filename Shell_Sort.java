@@ -25,7 +25,7 @@ public class Shell_Sort {
 		                // arr[z]의 값이 크니까 삽입
 		                arr[z + interval] = arr[z];
 		            }
-		            //삽입 끝낫으니 기억해둔 값 삽입
+		            //삽입 끝났으니 기억해둔 값 삽입
 		            arr[z + interval] = item;
 		        }
 		    }
