@@ -12,9 +12,9 @@ public class Shell_Sort {
 				arr[i] = (i+1); 
 		}*/
 		//값이 역순일 때
-		for(int i = arr.length; i > 0; i--) {
-				arr[i] = i+1; 
-		}
+		for(int i = 0; i < arr.length; i++) {
+			arr[i] = (arr.length-i*1); 
+	}
 		
 		int interval = arr.length/2;// 간격은 배열의 크기 /2
 		
