@@ -1,3 +1,48 @@
+## 정렬 알고리즘(+퀵정렬)의 성능 분석 및 비교
+<ol>
+<li>값 정렬 설명</li>
+<li>각 알고리즘 설명 및 그래프 분석</li>
+</ol>
+<br>
+
+각 알고리즘마다 정렬된 배열값, 역순으로 정렬된 배열값, 랜덤으로 정렬된 배열값을 넣어 비교해볼 것이다. 입력개수를 2^20값까지 넣으면 이클립스가 실행되지 않아 2^5 ~ 2^12까지 넣어봤다.
+
+## 코드 구현
+ **코드에 쓰일 배열 선언**
+ 
+ ■ 배열 정렬시키는 코드
+```
+for(int i = 0; i < arr.length; i++) {
+				arr[i] = (i+1); 
+		}
+
+```
+ ■ 배열 역순으로 정렬시키는 코드
+```
+for(int i = 0; i < arr.length; i++) {
+			arr[i] = (arr.length-i*1); 
+	}
+
+```
+ ■ 값을 랜덤으로 정렬시키는 코드
+```
+ public static int[] shuffle(int[] arr){
+		    for(int x=0;x<arr.length;x++){
+		      int i = (int)(Math.random()*arr.length);
+		      int j = (int)(Math.random()*arr.length);
+		            
+		      int tmp = arr[i];
+		      arr[i] = arr[j];
+		      arr[j] = tmp;
+		    }
+      
+      for(int i = 0; i < arr.length; i++) {
+				arr[i] = (i+1); 
+				}
+	        arr = shuffle(arr);
+
+```
+
 ## 버블 정렬(Bublle_Sort)
 
 <br>
