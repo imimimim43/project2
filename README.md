@@ -77,7 +77,10 @@ int interval = arr.length/2;// 간격은 배열의 크기 /2
 ```
 
 <br>
+
 ![image](https://user-images.githubusercontent.com/102197100/166885473-207a92c7-0ef2-4dd3-aedb-68aa970263fe.png)
+
+
 <br>
 - 쉘 정렬로 정렬, 역순, 랜덤 배열 값을 정렬한 결과, 입력 값이 점점 늘어날수록 위 사진과 같은 그래프가 만들어졌다.
 > 역순, 랜덤, 정렬 순으로 정렬 시간이 점점 길어지는 것을 알 수 있다.
