@@ -231,12 +231,6 @@ Queue H = new PriorityQueue();
 
 <br>
 
-![image](https://user-images.githubusercontent.com/102197100/166948923-0a47ffc9-5541-4778-a244-3da20d6b2254.png)
-
-<br>
-
-<br>
-
 ![image](https://user-images.githubusercontent.com/102197100/166948634-f38b4d97-d595-4769-bc65-5e74f3a9a651.png)
 
 <br>
@@ -276,6 +270,12 @@ for(int i = 0; i <arr.length;i++) {
 
 ## 선택 정렬(Selection_Sort)
 ■ 선택 정렬(Selection_Sort)
+
+<br>
+
+![image](https://user-images.githubusercontent.com/102197100/166948923-0a47ffc9-5541-4778-a244-3da20d6b2254.png)
+
+<br>
 
 <br>
 
