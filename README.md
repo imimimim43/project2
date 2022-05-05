@@ -136,5 +136,37 @@ int interval = arr.length/2;// 간격은 배열의 크기 /2
 
 - **퀵 정렬**로 정렬, 역순, 랜덤 배열 값을 정렬한 결과, 위 그래프가 그려졌는데 쉘 정렬과 같이 입력 값이 2^12으로 갈수록 역순, 랜덤, 정렬 순으로 정렬 시간이 점점 길어지는 것을 알 수 있다.
 
+<br>
 
+## 힙 정렬(Heap_Sort)
+■ 힙 정렬(Heap_Sort)
+
+<br>
+
+- 힙 트리 구조를 이용한 정렬 방법이며 내림차순 정렬에는 최대 힙을 구성하고 , 오름차순 정렬에는 최소 힙을 구성하면 된다. 자바에는 quere가 이미 구현되어 있기 때문에 그것을 이용하면 쉽게 구현할 수 있다.
+
+<br>
+
+
+### 코드 구현
+
+```
+Queue H = new PriorityQueue();
+    
+    for(int i=0; i<arr.length; i++)
+        H.offer(arr[i]); //offer 값을 넣기
+
+    Object obj = null;
+    int a = 0;
+    while((obj = H.poll())!=null) //poll 값을 빼기
+        System.out.printf("%s ",obj);
+```
+
+<br>
+
+![힙](https://user-images.githubusercontent.com/102197100/166893306-2a610a24-8519-4385-8e77-063ff8f1b02c.PNG)
+
+<br>
+
+- **힙 정렬**로 정렬, 역순, 랜덤 배열 값을 정렬한 결과, 위 그래프가 그려졌는데 쉘 정렬, 퀵 정렬과 같이 입력 값이 2^12으로 갈수록 역순, 랜덤, 정렬 순으로 정렬 시간이 점점 길어지는 것을 알 수 있다.
 
