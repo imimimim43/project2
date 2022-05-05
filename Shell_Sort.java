@@ -1,4 +1,16 @@
 public class Shell_Sort {
+	 public static int[] shuffle(int[] arr){
+		    for(int x=0;x<arr.length;x++){
+		      int i = (int)(Math.random()*arr.length);
+		      int j = (int)(Math.random()*arr.length);
+		            
+		      int tmp = arr[i];
+		      arr[i] = arr[j];
+		      arr[j] = tmp;
+		    }
+		        
+		    return arr;
+		  } //배열 값 랜덤으로 바꿀 때 사용하는 매소드
 	public static void main(String[] args) {
 		System.out.println("Shell_Sort");
 		
@@ -15,6 +27,15 @@ public class Shell_Sort {
 		for(int i = 0; i < arr.length; i++) {
 			arr[i] = (arr.length-i*1); 
 	}
+		//값이 랜덤일 때
+		for(int i = 0; i < arr.length; i++) {
+				arr[i] = (i+1); 
+				}
+	        arr = shuffle(arr);
+
+	        for (int i = 0; i < arr.length; i++) {
+	            System.out.print(arr[i] + " ");
+	        }
 		
 		int interval = arr.length/2;// 간격은 배열의 크기 /2
 		
